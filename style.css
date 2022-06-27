@@ -32,6 +32,7 @@ ul li a {
 .headerMenu {
     display: flex;
     width: 30%;
+    max-width: 300px;
     justify-content: space-between;
 }
 header {
@@ -46,7 +47,7 @@ header {
     margin: auto;
     justify-content: space-between;
     align-items: stretch;
-    margin-bottom: 80px;
+    margin-bottom: 95px;
 }
 .elementA1 {
     display: flex;
@@ -89,7 +90,7 @@ margin-right: 10px;
     margin: auto;
     justify-content: space-between;
     align-items: flex-end;
-    margin-bottom: 80px;
+    margin-bottom: 95px;
 }
 .elementB2 h2 {
     font-size: 48px;
