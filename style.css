@@ -1,119 +1,227 @@
 :root {
-    --primary-color: #258055;
+  --primary-color: #a03d38;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-ul li a {
-    text-decoration: none;
-    color: white;
-    font-stretch: condensed;
+header li {
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+header ul li a {
+  text-decoration: none;
+  color: white;
+  font-stretch: condensed;
 }
 #test {
-    margin: auto;
+  margin: auto;
 }
 .flex-container {
-    display: flex;
-    max-width: 90%;
-    margin: auto;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
+  display: flex;
+  max-width: 80%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
 }
 .headerMenu {
-    display: flex;
-    width: 30%;
-    max-width: 300px;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
 }
 header {
-    background-color: var(--primary-color);
-    color: white;
-    margin-bottom: 80px;
+  background-color: var(--primary-color);
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+header li:hover {
+  box-shadow: inset 10rem 0 0 0 #fff;
+  transition: box-shadow 0.5s ease-in-out;
+}
+header a:hover {
+  color: var(--primary-color);
 }
 
 .elementA {
-    display: flex;
-    max-width: 85%;
-    margin: auto;
-    justify-content: space-between;
-    align-items: stretch;
-    margin-bottom: 95px;
+  margin-top: 6rem;
+  display: flex;
+  max-width: 80%;
+  margin: auto;
+  margin-top: 8rem;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-bottom: 2rem;
 }
 .elementA1 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .elementA1 h1 {
-    font-size: 64px;
-    color: var(--primary-color);
-    margin-bottom: 20px
+  font-size: 64px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
 }
 .elementA1 p {
-    font-size: 28px;
-    margin-bottom: 45px
+  font-size: 28px;
+  margin-bottom: 45px;
 }
 .elementA1 a {
-    background: var(--primary-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 30px;
-    padding: 1.5vh;
-    text-decoration: none;
-    text-align: center;
-    color: white;
-    font-stretch: condensed;
-    max-width: 20vh;
+  background: var(--primary-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  padding: 1.5vh;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-stretch: condensed;
+  max-width: 20vh;
 }
 .item {
-    display: flex;
+  display: flex;
 }
 .item div {
-width: 7px;
-height: 57px;
-background: var(--primary-color);
-margin-right: 10px;
+  width: 7px;
+  height: 57px;
+  background: var(--primary-color);
+  margin-right: 10px;
 }
 .elementB {
-    display: flex;
-    max-width: 85%;
-    margin: auto;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 95px;
+  display: flex;
+  max-width: 80%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 5rem;
 }
 .elementB2 h2 {
-    font-size: 48px;
-    color: var(--primary-color);
-    margin-bottom: 40px
+  font-size: 48px;
+  color: var(--primary-color);
+  margin-bottom: 40px;
 }
 .elementB2 p {
-    font-size: 18px;
-    margin-bottom: 10px;
-    line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  line-height: 28px;
 }
 
-.elementC {
-    background-color: var(--primary-color);
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 80px;
+.services {
+  background-color: var(--primary-color);
+  width: 100%;
+  margin-bottom: 4rem;
+  padding-block: 3rem;
+  color: #fff;
 }
-.elementC2 {
-    background-color: var(--primary-color);
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 80px;
+.services h2 {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+.servicesType {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.servicesType div {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  align-items: center;
+  gap: 1.5rem;
+}
+.servicesButton {
+  background-color: #fff;
+  padding: 10px;
+  padding-inline: 2rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+#planos {
+  width: 80%;
+  margin: auto;
+  color: var(--primary-color);
+  margin-bottom: 4rem;
+}
+#planos h2 {
+  display: inline;
+}
+#planos h3 {
+  border-bottom: solid var(--primary-color) 2px;
+  width: 80%;
+  text-align: center;
+  padding-bottom: 5px;
+}
+#planos div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+#planos div div {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  border: solid var(--primary-color) 3px;
+  width: 12rem;
+}
+#planos div div div {
+  border: none;
+}
+#planos li {
+  color: black;
+  list-style-type: square;
+}
+.planosButton {
+  background-color: var(--primary-color);
+  padding: 10px;
+  padding-inline: 2rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+#plan1 {
+  gap: 1rem;
+}
+#plan2 {
+  gap: 2rem;
+}
+#plan3 {
+  gap: 3rem;
+}
+
+footer div {
+  display: flex;
+  max-width: 80%;
+  margin: auto;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 3rem;
+  background-color: var(--primary-color);
+  padding-bottom: 1rem;
+  color: #fff;
+}
+
+footer {
+  background-color: var(--primary-color);
 }
